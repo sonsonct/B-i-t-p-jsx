@@ -1,19 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View , Button} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { TextInput } from 'react-native-web';
 import styles from './styles';
+import Square from './Square'; 
 export default function App() {
   return (
-    
+
     <View style={styles.container}>
-          <View style={styles.box1}>
-            <Text>Square1</Text>
-          </View>
-          <View style={styles.box2}>
-            <Text>Square2</Text>
-          </View>
-          <View style={styles.box3}>
-            <Text>Square3</Text>
-          </View>
+      <Square number='1' color="#6CD1FA"/>
+      <Square number='2' color="#78F57A"/>
+      <Square number='3' color="#FA4C8F"/>
     </View>
   );
 }
